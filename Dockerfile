@@ -3,10 +3,10 @@ MAINTAINER 25691
 RUN  yum install -y httpd \
 zip \
 unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/ww/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page267/pcoint.zip /var/lib/html
 WORKDIR /var/www/html
-RUN unzip kindle.zip
-RUN cp -rvf markup-kindle/* .
-RUN rm -rf _MACOSX markup-kindle kindle.zip
+RUN unzip pcoint.zip
+RUN cp -rvf pcoint/* .
+RUN rm -rf pcoint pcoint.zip
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80

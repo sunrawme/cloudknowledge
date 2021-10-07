@@ -3,8 +3,8 @@ MAINTAINER sandeeprawat25691@gmail.com
 RUN  yum install -y httpd \
 zip \
 unzip
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page267/pcoint.zip 
 WORKDIR /var/www/html
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page267/pcoint.zip .
 RUN ls
 RUN unzip pcoint.zip
 RUN cp -rvf pcoint/* .
